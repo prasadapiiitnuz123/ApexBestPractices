@@ -19,7 +19,7 @@ trigger Number10 on Account (before delete, before insert, before update) {
         
         
         for(Opportunity o: opptysClosedWon){	
-    		if(o.accountid == a.id)
+    		if(o.navvendid== a.id)
     		   System.debug('Do more logic here...');
         }
     }
